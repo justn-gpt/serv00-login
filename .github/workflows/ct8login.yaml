@@ -1,4 +1,4 @@
-name: Run Login Script
+name: ct8login
 
 on:
   workflow_dispatch:
@@ -23,7 +23,7 @@ jobs:
       - name: Create accounts.json from environment variable
         run: echo "$ACCOUNTS_JSON" > accounts.json
         env:
-            ACCOUNTS_JSON: ${{ secrets.ACCOUNTS_JSON }}  # 从GitHub Secrets中获取环境变量
+            ACCOUNTS_JSON: ${{ secrets.CT8ACCOUNTS_JSON }}  # 从GitHub Secrets中获取环境变量
 
       - name: 安装依赖
         run: |
