@@ -1,4 +1,4 @@
-name: Run Login Script
+name: Serv00 Login Script
 
 on:
   workflow_dispatch:
