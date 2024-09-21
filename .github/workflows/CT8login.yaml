@@ -1,4 +1,4 @@
-name: ct8login
+name: CT8login
 
 on:
   workflow_dispatch:
